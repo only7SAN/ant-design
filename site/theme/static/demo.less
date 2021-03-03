@@ -13,32 +13,67 @@
   width: 100%;
   margin: 0 0 16px;
   border: 1px solid @site-border-color-split;
-  border-radius: @border-radius-sm;
+  border-radius: @border-radius-base;
   transition: all 0.2s;
-
+  .code-box-title {
+    &,
+    a {
+      color: @site-text-color;
+      background: @component-background;
+    }
+  }
+  &,
+  .code-box-demo {
+    background-color: @component-background;
+  }
+  .markdown {
+    pre {
+      margin: 0.5em 0;
+      padding: 6px 12px;
+    }
+    pre code {
+      margin: 0;
+      background: #f5f5f5;
+    }
+  }
   &:target {
     border: 1px solid @primary-color;
   }
 
   &-expand-trigger {
     position: relative;
-    margin-left: 8px;
+    margin-left: 12px;
     color: #3b4357;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.75;
     transition: all 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .ant-row-rtl & {
+      margin-right: 8px;
+      margin-left: 0;
+    }
   }
 
   &-title {
     position: absolute;
     top: -14px;
-    margin-left: -8px;
+    margin-left: 16px;
     padding: 1px 8px;
     color: #777;
-    background: #fff;
-    border-radius: @border-radius-sm @border-radius-sm 0 0;
+    background: @body-background;
+    border-radius: @border-radius-base @border-radius-base 0 0;
     transition: background-color 0.4s;
+
+    .ant-row-rtl & {
+      margin-right: 16px;
+      margin-left: 0;
+      border-radius: @border-radius-base 0 0 @border-radius-base;
+    }
 
     a,
     a:hover {
@@ -48,6 +83,10 @@
     }
   }
 
+  &-description {
+    padding: 18px 24px 12px;
+  }
+
   a.edit-button {
     position: absolute;
     top: 7px;
@@ -55,13 +94,29 @@
     padding-right: 6px;
     font-size: 12px;
     text-decoration: none;
-    background: #fff;
+    background: inherit;
     transform: scale(0.9);
+
+    .anticon {
+      color: @site-text-color-secondary;
+      transition: all 0.3s;
+      &:hover {
+        color: @site-text-color;
+      }
+    }
+
+    .ant-row.ant-row-rtl & {
+      right: auto;
+      left: -22px;
+      margin-right: 0;
+      padding-right: 8px;
+      padding-left: 6px;
+    }
   }
 
   &-demo {
     padding: 42px 24px 50px;
-    color: rgba(0, 0, 0, 0.65);
+    color: @site-text-color;
     border-bottom: 1px solid @site-border-color-split;
   }
 
@@ -74,19 +129,17 @@
     &.markdown {
       position: relative;
       width: 100%;
-      padding: 18px 32px;
       font-size: @font-size-base;
-      border-radius: 0 0 @border-radius-sm @border-radius-sm;
+      border-radius: 0 0 @border-radius-base @border-radius-base;
       transition: background-color 0.4s;
     }
 
     blockquote {
-      margin: 0;
+      line-height: 1.5;
     }
 
     h4,
     section& p {
-      width: 98%;
       margin: 0;
     }
 
@@ -96,6 +149,11 @@
       padding-right: 25px;
       font-size: 12px;
       word-break: break-word;
+
+      .ant-row-rtl & {
+        padding-right: 0;
+        padding-left: 25px;
+      }
     }
   }
 
@@ -105,13 +163,6 @@
   }
 
   .code-expand-icon {
-    position: absolute;
-    right: 16px;
-    bottom: 23px;
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
-    text-align: center;
     cursor: pointer;
   }
 
@@ -126,6 +177,11 @@
     box-shadow: none;
     transition: all 0.4s;
     user-select: none;
+
+    .ant-row-rtl & {
+      right: 0;
+      left: auto;
+    }
   }
 
   .code-expand-icon-show {
@@ -148,7 +204,7 @@
   .highlight-wrapper {
     display: none;
     overflow: auto;
-    border-radius: 0 0 @border-radius-sm @border-radius-sm;
+    border-radius: 0 0 @border-radius-base @border-radius-base;
 
     &-expand {
       display: block;
@@ -157,10 +213,15 @@
 
   .highlight {
     position: relative;
+
+    .ant-tabs-nav-list {
+      margin: 0 auto;
+    }
+
     pre {
       margin: 0;
       padding: 0;
-      background: #fff;
+      background: @component-background;
     }
     &:not(:first-child) {
       border-top: 1px dashed @site-border-color-split;
@@ -168,32 +229,57 @@
   }
 
   &-actions {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    text-align: right;
-    > i,
-    > form {
-      display: inline-block;
-      margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    border-top: 1px dashed @site-border-color-split;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &-actions > &-code-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    color: @site-text-color-secondary;
+    cursor: pointer;
+    transition: all 0.24s;
+
+    .ant-row-rtl & {
+      margin-right: 16px;
+      margin-left: 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+
+      .ant-row-rtl & {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      color: @site-text-color;
     }
   }
 
   &-code-copy {
-    width: 20px;
-    height: 20px;
-    color: @site-text-color-secondary;
+    width: 14px;
+    height: 14px;
     font-size: 14px;
-    line-height: 20px;
     text-align: center;
-    background: #fff;
-    border-radius: 20px;
+    background: @component-background;
     cursor: pointer;
-    opacity: 0;
-    transition: all 0.24s;
+    transition: transform 0.24s;
 
     &:hover {
-      color: @site-text-color-secondary;
       transform: scale(1.2);
     }
     &.anticon-check {
@@ -203,45 +289,30 @@
   }
 
   &-codepen {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     overflow: hidden;
-    text-indent: -9999px;
-    background: transparent
-      url('https://gw.alipayobjects.com/zos/rmsportal/OtZslpOjYXijshDERXwc.svg') center / 14px
-      no-repeat;
     border: 0;
     cursor: pointer;
-    opacity: 0;
-    transition: all 0.3s;
   }
 
   &-riddle {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     overflow: hidden;
-    text-indent: -9999px;
-    background: transparent
-      url('https://gw.alipayobjects.com/zos/rmsportal/DlHbxMCyeuyOrqOdbgik.svg') center / 14px
-      no-repeat;
     border: 0;
     cursor: pointer;
-    opacity: 0;
-    transition: all 0.3s;
   }
 
   &-codesandbox {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     overflow: hidden;
-    text-indent: -9999px;
-    background: transparent
-      url('https://gw.alipayobjects.com/zos/rmsportal/aaYmtdDyHSCkXyLZVgGK.svg') center / 14px
-      no-repeat;
     border: 0;
     cursor: pointer;
-    opacity: 0;
-    transition: all 0.3s;
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .highlight-wrapper:hover &-code-copy,
@@ -255,8 +326,34 @@
     width: auto;
     margin: 0;
     code {
-      background: #fff;
+      background: @component-background;
       border: none;
+    }
+  }
+
+  &-debug {
+    border-color: @purple-3;
+  }
+
+  &-debug &-title a {
+    color: @purple-6;
+  }
+}
+
+.all-code-box-controls {
+  float: right;
+
+  .ant-row-rtl & {
+    float: left;
+  }
+}
+
+.ant-row-rtl {
+  #components-tooltip-demo-placement,
+  #components-popover-demo-placement,
+  #components-popconfirm-demo-placement {
+    .code-box-demo {
+      direction: ltr;
     }
   }
 }

@@ -1,53 +1,61 @@
+<!--
 First of all, thank you for your contribution! 😄
 
-New feature please send pull request to feature branch, and rest to master branch.
-Pull request will be merged after one of collaborators approve.
-Please makes sure that these form are filled before submitting your pull request, thank you!
+New feature please send a pull request to feature branch, and rest to master branch.
+Pull requests will be merged after one of the collaborators approve.
+Please makes sure that these forms are filled before submitting your pull request, thank you!
+-->
 
 [[中文版模板 / Chinese template](https://github.com/ant-design/ant-design/blob/master/.github/PULL_REQUEST_TEMPLATE/pr_cn.md)]
 
-### This is a ...
+### 🤔 This is a ...
 
 - [ ] New feature
 - [ ] Bug fix
-- [ ] Site / document update
+- [ ] Site / documentation update
+- [ ] Demo update
 - [ ] Component style update
 - [ ] TypeScript definition update
+- [ ] Bundle size optimization
+- [ ] Performance optimization
+- [ ] Enhancement feature
+- [ ] Internationalization
 - [ ] Refactoring
 - [ ] Code style optimization
+- [ ] Test Case
 - [ ] Branch merge
 - [ ] Other (about what?)
 
-### What's the background?
+### 🔗 Related issue link
 
-> 1. Describe the source of requirement.
-> 2. Resolve what problem.
-> 3. Related issue link.
+<!--
+1. Describe the source of requirement, like related issue link.
+-->
 
-### API Realization (Optional if not new feature)
+### 💡 Background and solution
 
-> 1. Basic thought of solution and other optional proposal.
-> 2. List final API realization and usage sample.
-> 3. GIF or snapshot should be provided if includes UI/interactive modification.
+<!--
+1. Describe the problem and the scenario.
+2. GIF or snapshot should be provided if includes UI/interactive modification.
+3. How to fix the problem, and list final API implementation and usage sample if that is a new feature.
+-->
 
-### What's the effect? (Optional if not new feature)
+### 📝 Changelog
 
-> 1. Does this PR affect user? Which part will be affected?
-> 2. What will say in changelog?
-> 3. Does this PR contains potential break change or other risk?
+<!--
+Describe changes from the user side, and list all potential break changes or other risks.
+--->
 
-### Changelog description (Optional if not new feature)
+| Language   | Changelog |
+| ---------- | --------- |
+| 🇺🇸 English |           |
+| 🇨🇳 Chinese |           |
 
-> 1. English description
-> 2. Chinese description (optional)
+### ☑️ Self Check before Merge
 
-### Self Check before Merge
+⚠️ Please check all items below before review. ⚠️
 
 - [ ] Doc is updated/provided or not needed
 - [ ] Demo is updated/provided or not needed
 - [ ] TypeScript definition is updated/provided or not needed
 - [ ] Changelog is provided or not needed
-
-### Additional Plan? (Optional if not new feature)
-
-> If this PR related with other PR or following info. You can type here.

@@ -13,30 +13,26 @@ Switch 失效状态。
 
 Disabled state of `Switch`.
 
-````jsx
+```jsx
 import { Switch, Button } from 'antd';
 
-class App extends React.Component {
-  state = {
-    disabled: true,
-  }
+const App = () => {
+  const [disabled, setDisabled] = React.useState(true);
 
-  toggle = () => {
-    this.setState({
-      disabled: !this.state.disabled,
-    });
-  }
+  const toggle = () => {
+    setDisabled(!disabled);
+  };
 
-  render() {
-    return (
-      <div>
-        <Switch disabled={this.state.disabled} defaultChecked />
-        <br />
-        <Button type="primary" onClick={this.toggle}>Toggle disabled</Button>
-      </div>
-    );
-  }
-}
+  return (
+    <>
+      <Switch disabled={disabled} defaultChecked />
+      <br />
+      <Button type="primary" onClick={toggle}>
+        Toggle disabled
+      </Button>
+    </>
+  );
+};
 
 ReactDOM.render(<App />, mountNode);
-````
+```

@@ -27,7 +27,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 4
               </h3>
             </div>
@@ -45,7 +47,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 1
               </h3>
             </div>
@@ -63,7 +67,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 2
               </h3>
             </div>
@@ -81,7 +87,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 3
               </h3>
             </div>
@@ -99,7 +107,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 4
               </h3>
             </div>
@@ -117,7 +127,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 1
               </h3>
             </div>
@@ -135,7 +147,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 2
               </h3>
             </div>
@@ -153,7 +167,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 3
               </h3>
             </div>
@@ -171,7 +187,9 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 4
               </h3>
             </div>
@@ -180,7 +198,7 @@ exports[`renders ./components/carousel/demo/autoplay.md correctly 1`] = `
       </div>
     </div>
     <ul
-      class="slick-dots"
+      class="slick-dots slick-dots-bottom"
       style="display:block"
     >
       <li
@@ -243,7 +261,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 4
               </h3>
             </div>
@@ -261,7 +281,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 1
               </h3>
             </div>
@@ -279,7 +301,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 2
               </h3>
             </div>
@@ -297,7 +321,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 3
               </h3>
             </div>
@@ -315,7 +341,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 4
               </h3>
             </div>
@@ -333,7 +361,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 1
               </h3>
             </div>
@@ -351,7 +381,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 2
               </h3>
             </div>
@@ -369,7 +401,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 3
               </h3>
             </div>
@@ -387,7 +421,9 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 4
               </h3>
             </div>
@@ -396,7 +432,7 @@ exports[`renders ./components/carousel/demo/basic.md correctly 1`] = `
       </div>
     </div>
     <ul
-      class="slick-dots"
+      class="slick-dots slick-dots-bottom"
       style="display:block"
     >
       <li
@@ -451,7 +487,7 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
           aria-hidden="false"
           class="slick-slide slick-active slick-current"
           data-index="0"
-          style="outline:none;width:11.11111111111111%;position:relative;left:0;opacity:1;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease"
+          style="outline:none;width:11.11111111111111%;position:relative;left:0;opacity:1;transition:opacity 500ms ease, visibility 500ms ease"
           tabindex="-1"
         >
           <div>
@@ -459,7 +495,9 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 1
               </h3>
             </div>
@@ -469,7 +507,7 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
           aria-hidden="true"
           class="slick-slide"
           data-index="1"
-          style="outline:none;width:11.11111111111111%;position:relative;left:-11px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease"
+          style="outline:none;width:11.11111111111111%;position:relative;left:-11px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease"
           tabindex="-1"
         >
           <div>
@@ -477,7 +515,9 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 2
               </h3>
             </div>
@@ -487,7 +527,7 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
           aria-hidden="true"
           class="slick-slide"
           data-index="2"
-          style="outline:none;width:11.11111111111111%;position:relative;left:-22px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease"
+          style="outline:none;width:11.11111111111111%;position:relative;left:-22px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease"
           tabindex="-1"
         >
           <div>
@@ -495,7 +535,9 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 3
               </h3>
             </div>
@@ -505,7 +547,7 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
           aria-hidden="true"
           class="slick-slide"
           data-index="3"
-          style="outline:none;width:11.11111111111111%;position:relative;left:-33px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease;-webkit-transition:opacity 500ms ease, visibility 500ms ease"
+          style="outline:none;width:11.11111111111111%;position:relative;left:-33px;opacity:0;transition:opacity 500ms ease, visibility 500ms ease"
           tabindex="-1"
         >
           <div>
@@ -513,7 +555,9 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
               style="width:100%;display:inline-block"
               tabindex="-1"
             >
-              <h3>
+              <h3
+                style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+              >
                 4
               </h3>
             </div>
@@ -522,7 +566,7 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
       </div>
     </div>
     <ul
-      class="slick-dots"
+      class="slick-dots slick-dots-bottom"
       style="display:block"
     >
       <li
@@ -558,218 +602,320 @@ exports[`renders ./components/carousel/demo/fade.md correctly 1`] = `
 </div>
 `;
 
-exports[`renders ./components/carousel/demo/vertical.md correctly 1`] = `
-<div
-  class="ant-carousel ant-carousel-vertical"
->
+exports[`renders ./components/carousel/demo/position.md correctly 1`] = `
+Array [
   <div
-    class="slick-slider slick-vertical slick-initialized"
-    dir="ltr"
+    class="ant-radio-group ant-radio-group-outline"
+    style="margin-bottom:8px"
+  >
+    <label
+      class="ant-radio-button-wrapper ant-radio-button-wrapper-checked"
+    >
+      <span
+        class="ant-radio-button ant-radio-button-checked"
+      >
+        <input
+          checked=""
+          class="ant-radio-button-input"
+          type="radio"
+          value="top"
+        />
+        <span
+          class="ant-radio-button-inner"
+        />
+      </span>
+      <span>
+        Top
+      </span>
+    </label>
+    <label
+      class="ant-radio-button-wrapper"
+    >
+      <span
+        class="ant-radio-button"
+      >
+        <input
+          class="ant-radio-button-input"
+          type="radio"
+          value="bottom"
+        />
+        <span
+          class="ant-radio-button-inner"
+        />
+      </span>
+      <span>
+        Bottom
+      </span>
+    </label>
+    <label
+      class="ant-radio-button-wrapper"
+    >
+      <span
+        class="ant-radio-button"
+      >
+        <input
+          class="ant-radio-button-input"
+          type="radio"
+          value="left"
+        />
+        <span
+          class="ant-radio-button-inner"
+        />
+      </span>
+      <span>
+        Left
+      </span>
+    </label>
+    <label
+      class="ant-radio-button-wrapper"
+    >
+      <span
+        class="ant-radio-button"
+      >
+        <input
+          class="ant-radio-button-input"
+          type="radio"
+          value="right"
+        />
+        <span
+          class="ant-radio-button-inner"
+        />
+      </span>
+      <span>
+        Right
+      </span>
+    </label>
+  </div>,
+  <div
+    class="ant-carousel"
   >
     <div
-      class="slick-list"
+      class="slick-slider slick-initialized"
+      dir="ltr"
     >
       <div
-        class="slick-track"
-        style="width:900%;left:-100%"
+        class="slick-list"
       >
         <div
-          aria-hidden="true"
-          class="slick-slide slick-cloned"
-          data-index="-1"
-          style="width:11.11111111111111%"
-          tabindex="-1"
+          class="slick-track"
+          style="width:900%;left:-100%"
         >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                4
-              </h3>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="-1"
+            style="width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  4
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="false"
-          class="slick-slide slick-active slick-current"
-          data-index="0"
-          style="outline:none;width:11.11111111111111%"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                1
-              </h3>
+          <div
+            aria-hidden="false"
+            class="slick-slide slick-active slick-current"
+            data-index="0"
+            style="outline:none;width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  1
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide"
-          data-index="1"
-          style="outline:none;width:11.11111111111111%"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                2
-              </h3>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="1"
+            style="outline:none;width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  2
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide"
-          data-index="2"
-          style="outline:none;width:11.11111111111111%"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                3
-              </h3>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="2"
+            style="outline:none;width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  3
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide"
-          data-index="3"
-          style="outline:none;width:11.11111111111111%"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                4
-              </h3>
+          <div
+            aria-hidden="true"
+            class="slick-slide"
+            data-index="3"
+            style="outline:none;width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  4
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide slick-cloned"
-          data-index="4"
-          style="width:11.11111111111111%"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                1
-              </h3>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="4"
+            style="width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  1
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide slick-cloned"
-          data-index="5"
-          style="width:11.11111111111111%"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                2
-              </h3>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="5"
+            style="width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  2
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide slick-cloned"
-          data-index="6"
-          style="width:11.11111111111111%"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                3
-              </h3>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="6"
+            style="width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  3
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="slick-slide slick-cloned"
-          data-index="7"
-          style="width:11.11111111111111%"
-          tabindex="-1"
-        >
-          <div>
-            <div
-              style="width:100%;display:inline-block"
-              tabindex="-1"
-            >
-              <h3>
-                4
-              </h3>
+          <div
+            aria-hidden="true"
+            class="slick-slide slick-cloned"
+            data-index="7"
+            style="width:11.11111111111111%"
+            tabindex="-1"
+          >
+            <div>
+              <div
+                style="width:100%;display:inline-block"
+                tabindex="-1"
+              >
+                <h3
+                  style="height:160px;color:#fff;line-height:160px;text-align:center;background:#364d79"
+                >
+                  4
+                </h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <ul
+        class="slick-dots slick-dots-top"
+        style="display:block"
+      >
+        <li
+          class="slick-active"
+        >
+          <button>
+            1
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            2
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            3
+          </button>
+        </li>
+        <li
+          class=""
+        >
+          <button>
+            4
+          </button>
+        </li>
+      </ul>
     </div>
-    <ul
-      class="slick-dots"
-      style="display:block"
-    >
-      <li
-        class="slick-active"
-      >
-        <button>
-          1
-        </button>
-      </li>
-      <li
-        class=""
-      >
-        <button>
-          2
-        </button>
-      </li>
-      <li
-        class=""
-      >
-        <button>
-          3
-        </button>
-      </li>
-      <li
-        class=""
-      >
-        <button>
-          4
-        </button>
-      </li>
-    </ul>
-  </div>
-</div>
+  </div>,
+]
 `;

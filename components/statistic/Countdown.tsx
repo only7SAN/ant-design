@@ -1,15 +1,18 @@
 import * as React from 'react';
-import { polyfill } from 'react-lifecycles-compat';
-import * as moment from 'moment';
-import interopDefault from '../_util/interopDefault';
 import Statistic, { StatisticProps } from './Statistic';
 import { formatCountdown, countdownValueType, FormatConfig } from './utils';
+import { cloneElement } from '../_util/reactNode';
 
 const REFRESH_INTERVAL = 1000 / 30;
 
 interface CountdownProps extends StatisticProps {
   value?: countdownValueType;
   format?: string;
+  onFinish?: () => void;
+}
+
+function getTime(value?: countdownValueType) {
+  return new Date(value as any).getTime();
 }
 
 class Countdown extends React.Component<CountdownProps, {}> {
@@ -34,7 +37,7 @@ class Countdown extends React.Component<CountdownProps, {}> {
   syncTimer = () => {
     const { value } = this.props;
 
-    const timestamp = interopDefault(moment)(value).valueOf();
+    const timestamp = getTime(value);
     if (timestamp >= Date.now()) {
       this.startTimer();
     } else {
@@ -43,7 +46,7 @@ class Countdown extends React.Component<CountdownProps, {}> {
   };
 
   startTimer = () => {
-    if (this.countdownId !== undefined) return;
+    if (this.countdownId) return;
 
     this.countdownId = window.setInterval(() => {
       this.forceUpdate();
@@ -51,8 +54,16 @@ class Countdown extends React.Component<CountdownProps, {}> {
   };
 
   stopTimer = () => {
-    clearInterval(this.countdownId);
-    this.countdownId = undefined;
+    const { onFinish, value } = this.props;
+    if (this.countdownId) {
+      clearInterval(this.countdownId);
+      this.countdownId = undefined;
+
+      const timestamp = getTime(value);
+      if (onFinish && timestamp < Date.now()) {
+        onFinish();
+      }
+    }
   };
 
   formatCountdown = (value: countdownValueType, config: FormatConfig) => {
@@ -62,7 +73,7 @@ class Countdown extends React.Component<CountdownProps, {}> {
 
   // Countdown do not need display the timestamp
   valueRender = (node: React.ReactElement<HTMLDivElement>) =>
-    React.cloneElement(node, {
+    cloneElement(node, {
       title: undefined,
     });
 
@@ -72,7 +83,5 @@ class Countdown extends React.Component<CountdownProps, {}> {
     );
   }
 }
-
-polyfill(Countdown);
 
 export default Countdown;

@@ -13,15 +13,15 @@ title:
 
 Mark a pending state of switch.
 
-````jsx
+```jsx
 import { Switch } from 'antd';
 
 ReactDOM.render(
-  <div>
+  <>
     <Switch loading defaultChecked />
     <br />
     <Switch size="small" loading />
-  </div>,
-  mountNode
+  </>,
+  mountNode,
 );
-````
+```

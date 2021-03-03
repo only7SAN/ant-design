@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import List from '../list';
 import Checkbox from '../../checkbox';
 
@@ -22,22 +22,31 @@ const listCommonProps = {
   ],
   checkedKeys: ['a'],
   notFoundContent: 'Not Found',
-  lazy: false,
 };
 
-describe('List', () => {
+describe('Transfer.List', () => {
   it('should render correctly', () => {
-    const wrapper = render(<List {...listCommonProps} />);
-    expect(wrapper).toMatchSnapshot();
+    const wrapper = mount(<List {...listCommonProps} />);
+    wrapper.update();
+    expect(wrapper).toMatchRenderedSnapshot();
   });
 
   it('should check top Checkbox while all available items are checked', () => {
     const wrapper = mount(<List {...listCommonProps} checkedKeys={['a', 'b']} />);
-    expect(
-      wrapper
-        .find('.ant-transfer-list-header')
-        .find(Checkbox)
-        .prop('checked'),
-    ).toBeTruthy();
+    expect(wrapper.find('.ant-transfer-list-header').find(Checkbox).prop('checked')).toBeTruthy();
+  });
+
+  it('when component has been unmounted, componentWillUnmount should be called', () => {
+    const wrapper = mount(<List {...listCommonProps} />);
+    const willUnmount = jest.spyOn(wrapper.instance(), 'componentWillUnmount');
+    wrapper.unmount();
+    expect(willUnmount).toHaveBeenCalled();
+  });
+
+  it('when value is not exists, handleFilter should return', () => {
+    const handleFilter = jest.fn();
+    const wrapper = mount(<List {...listCommonProps} handleFilter={handleFilter} />);
+    expect(wrapper.instance().handleFilter({ target: 'test' })).toBe(undefined);
+    expect(handleFilter).toHaveBeenCalled();
   });
 });
